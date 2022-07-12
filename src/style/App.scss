@@ -38,7 +38,7 @@ body {
     > .main-layout {
         width: 100%;
         position: relative;
-        overflow-y: scroll;
+        overflow-x: hidden;
         height: calc(100vh - 60px);
 
         &::-webkit-scrollbar {
