@@ -1,0 +1,23 @@
+.page-container {
+    padding: 40px;
+
+    > div {
+        background-color: #fff;
+        width: 100%;
+        border-radius: 15px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .page-container {
+        padding: 0;
+
+        > div {
+            background-color: transparent;
+        }
+
+        > div.page-event-to-come, div.page-event-pass, div.page-guest-list, div.page-moderation {
+            background-color: transparent;
+        }
+    }
+}

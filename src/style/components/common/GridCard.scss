@@ -1,0 +1,87 @@
+.grid-card {
+    background-color: #fff;
+    box-shadow: 1px 38px 50px -20px rgba(0, 0, 0, 0.08);
+    border-radius: 30px;
+    padding: 40px;
+
+    span {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    form {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        height: 100%;
+
+        p {
+            font-family: "Montserrat";
+            font-weight: 300;
+            font-size: 11px;
+            color: #000;
+        }
+
+        input {
+            font-size: 12px;
+            padding: 12px 20px;
+            border: 0;
+            border-bottom: 1px solid #C6C6C6;
+            font-family: 'Montserrat';
+            font-weight: 400;
+
+            &::placeholder{
+                font-style: italic;
+                color: rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        select {
+            border: 1px solid #E2E2E2;
+            border-radius: 19px;
+            padding: 12px 20px;
+        }
+
+        textarea {
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-size: 12px;
+            height: 100%;
+            margin-bottom: 35px;
+            border: 1px solid #E2E2E2;
+            border-radius: 19px;
+            padding: 12px 20px;
+
+            &::placeholder {
+                font-style: italic;
+                color: rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+}
+
+.gc-3 {
+    grid-column: span 3;
+}
+
+.gc-4 {
+    grid-column: span 4;
+}
+
+.gc-6 {
+    grid-column: span 6;
+}
+
+.gr-2 {
+    grid-row: span 2;
+}
+
+@media only screen and (max-width: 425px) {
+    .grid-card {
+        min-width: 100%;
+        grid-column: 1;
+        box-sizing: border-box;
+    }
+}

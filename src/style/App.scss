@@ -1,0 +1,48 @@
+@import "./reset.scss";
+
+/* Pages */
+@import "./pages/authentification";
+@import "./pages/chat";
+@import "./pages/homepage";
+@import "./pages/event-to-come";
+@import "./pages/golden-book";
+@import "./pages/event-pass";
+@import "./pages/informations";
+@import "./pages/guest-list";
+@import "./pages/settings";
+@import "./pages/alert";
+@import "./pages/moderation";
+@import "./pages/modules";
+@import "./pages/photo";
+@import "./pages/playlist";
+@import "./pages/profil";
+@import "./pages/error";
+
+/* Components */
+@import "./components/common";
+@import "./components/navbar";
+@import "./components/event-pages";
+@import "./components/diapo";
+
+/* Fonts */
+@import "./fonts/Montserrat.scss";
+
+/* General */
+body {
+    background-color: #F3F3F3;
+}
+
+.content-layout {
+    display: flex;
+
+    > .main-layout {
+        width: 100%;
+        position: relative;
+        overflow-y: scroll;
+        height: calc(100vh - 60px);
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}

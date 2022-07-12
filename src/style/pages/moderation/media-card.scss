@@ -1,0 +1,108 @@
+.media-card {
+    width: 100%;
+    font-family: "Montserrat";
+    cursor: pointer;
+    padding: 5px 5px 15px 5px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+        box-shadow: 0px 4px 55px -19px rgba(0, 0, 0, 0.15);
+    }
+
+    > .container-img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+
+        > img {
+            width: 100%;
+        }
+    }
+
+    > div {
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Montserrat';
+
+        > div:first-of-type {
+            display: flex;
+            flex-direction: column;
+            row-gap: 6px;
+           
+            
+            > span{
+                font-weight: 700;
+                color: #1C2C65;
+                font-size: 12px;
+                padding-left: 5px;
+
+                span {
+                    font-weight: 400;
+                    font-style: italic;
+                }
+            }
+
+            > div {
+                display: flex;
+                column-gap: 8px;
+                align-items: center;
+                padding-left: 5px;
+
+                > span:first-of-type {
+                    height: 6px;
+                    width: 6px;
+                    display: flex;
+                    background-color: #FFA884;
+                    border-radius: 100%;
+                }
+
+                font-size: 8px;
+                color: #5B6BA4;
+            }
+        }
+
+        > div:last-of-type {
+            display: flex;
+            column-gap: 10px;
+            align-items: center;
+            padding-right: 5px;
+            
+            button {
+                height: 24px;
+                width: 24px;
+                border-radius: 100%;
+                border: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:first-of-type {
+                    background: #08F2B6;
+                }
+
+                &:last-of-type {
+                    background: #EC5358;
+                }
+
+                > img {
+                    height: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .media-card {
+        background-color: #fff;
+        width: auto;
+    }
+}

@@ -1,0 +1,14 @@
+.container-alert {
+    display: flex;
+    height: 100%;
+
+    > div:first-of-type {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .container-alert {
+        flex-direction: column;
+    }
+}

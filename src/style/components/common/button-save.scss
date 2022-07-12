@@ -1,0 +1,22 @@
+.button-save {
+    height: 100vh;
+    width: 70px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > div {
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(53.35deg, #4669E3 4.81%, rgba(84, 51, 255, 0.989583) 4.82%, #74C4F4 82.31%);
+        box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+}

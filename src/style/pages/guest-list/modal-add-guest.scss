@@ -1,0 +1,69 @@
+.modal-add-guest {
+    z-index: 15;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat';
+
+    > div {
+        background-color: #fff;
+        padding: 40px;
+        box-shadow: 1px 38px 50px -20px rgba(0, 0, 0, 0.08);
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+
+        > span {
+            font-weight: 700;
+            font-size: 20px;
+            color: #1C2C65;
+            padding-bottom: 10px;
+        }
+
+        > p {
+            font-weight: 300;
+            font-size: 11px;
+            color: #5B6BA4;
+            padding-bottom: 20px;
+        }
+
+        > input {
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            width: 100%;
+            font-size: 12px;
+            padding: 12px 20px;
+            border: 0;
+            border-bottom: 1px solid #C6C6C6;
+            font-family: "Montserrat";
+            font-weight: 400;
+        }
+
+        > button {
+            width: 100%;
+            height: 40px;
+            background: linear-gradient(88.35deg, #4669E3 1.4%, rgba(32, 189, 255, 0.54) 120.61%, #A5FECB 255.72%);
+            border-radius: 5px;
+            border: none;
+            color: #FFFFFF;
+            padding: 0 20px;
+            font-family: "Montserrat";
+        }
+
+        > img {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+    }
+}

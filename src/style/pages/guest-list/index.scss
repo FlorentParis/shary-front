@@ -1,0 +1,40 @@
+@import "./guest-card.scss";
+@import "./btn-add-guest.scss";
+@import "./modal-add-guest.scss";
+
+.page-guest-list {
+    .grid-guest-list {
+        padding: 40px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 40px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .page-guest-list {
+        padding: 40px;
+        box-sizing: border-box;
+
+        .grid-guest-list {
+            grid-template-columns: 1fr;
+            padding: 0;
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .page-guest-list {
+        .grid-guest-list {
+            grid-template-columns: repeat(6, 1fr);
+        }
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .page-guest-list {
+        .grid-guest-list {
+            grid-template-columns: repeat(8, 1fr);
+        }
+    }
+}

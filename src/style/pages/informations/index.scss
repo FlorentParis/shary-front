@@ -1,0 +1,144 @@
+.image-upload-card {
+    padding: 0!important;
+
+    > div {
+        padding: 60px 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Montserrat';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 12px;
+        color: #FFFFFF;
+        backdrop-filter: brightness(60%);
+        border-radius: 30px;
+
+        input[type='image'] {
+            width: 38px;
+            height: 26px;
+            cursor: pointer;
+            padding-top: 5px;
+        }
+    }
+}
+
+.date-card {
+    form {
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            label {
+                font-family: 'Montserrat';
+                font-weight: 300;
+                font-size: 12px;
+            }
+
+            input[type='date'],  input[type='time']{
+                border: 1px solid #C6C6C6;
+                border-radius: 19px;;
+            }
+        } 
+    }
+}
+
+.place-card {
+    form {
+        > div:first-of-type {
+            display: flex;
+            column-gap: 20px;
+
+            input {
+                width: 100%;
+            }
+        }
+
+        > div:last-of-type {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+
+            > div {
+                display: flex;
+                column-gap: 20px;
+                align-items: center;
+                
+                label {
+                    font-family: 'Montserrat';
+                    font-weight: 300;
+                    font-size: 11px;
+                }
+            }
+        }
+
+        > label {
+            font-family: 'Montserrat';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+
+.contact-card {
+    grid-row: span 2;
+    height: min-content;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        font-family: "Montserrat";
+        font-weight: 300;
+        font-size: 11px;
+        color: #636363;
+
+        > div {
+            display: flex;
+            flex-direction: column;
+
+            > input:last-of-type {
+                margin-bottom: 20px;
+            }
+
+           .options-select {
+                padding-top: 20px;
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+
+                > div {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 10px;
+                }
+           }
+        }
+    }
+}
+
+.notifs-card {
+    height: min-content;
+
+    form {
+        div {
+            font-family: 'Montserrat';
+            font-weight: 300;
+            font-size: 11px;
+            display: flex;
+            column-gap: 20px;
+            align-items: center;
+        }
+    }
+}
+
+.remainder-card {
+    form {
+        div {
+            display: flex;
+            column-gap: 20px;
+        }
+    }
+}

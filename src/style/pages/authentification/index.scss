@@ -1,0 +1,95 @@
+.page-auth {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 90px;
+    column-gap: 180px;
+    background: linear-gradient(112.38deg, #98EDDA -28.4%, #82D0F2 36.47%, #4669E3 100%);
+
+    > div:first-of-type {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        font-family: 'Montserrat';
+        row-gap: 30px;
+
+        h1 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .form-container {
+        width: 540px;
+        background: #FFFFFF;
+        box-shadow: 1px 38px 50px -20px rgba(0, 0, 0, 0.08);
+        border-radius: 30px;
+        padding: 70px 40px;
+        font-family: 'Montserrat';
+
+        h2 {
+            font-size: 28px;
+            color: #4669E3;
+            text-align: center;
+            padding-bottom: 40px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+
+            input {
+                font-size: 12px;
+                padding: 12px 20px;
+                border: 0;
+                border-bottom: 1px solid #C6C6C6;
+                font-family: "Montserrat";
+                font-weight: 400;
+            }
+
+            a {
+                font-size: 11px;
+                color: #4669E3;
+                padding-bottom: 20px;
+            }
+
+            div {
+                display: flex;
+                align-items: center;
+
+                input {
+                    height: 20px;
+                    width: 20px;
+                }
+
+                p {
+                    padding-left: 20px;
+                    font-weight: 300;
+                    font-size: 11px;
+                }
+            }
+
+            button {
+                filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.25));
+                background: linear-gradient(90.18deg, #4669E3 -8.73%, rgba(32, 189, 255, 0.5) 75.9%, rgba(165, 254, 203, 0) 160.54%);
+                border-radius: 5px;
+                width: 200px;
+                height: 30px;
+                border: none;
+                color: #fff;
+                align-self: center;
+            }
+        }
+
+        > p {
+            padding-top: 20px;
+            text-align: center;
+            font-size: 11px;
+        }
+    }
+}
