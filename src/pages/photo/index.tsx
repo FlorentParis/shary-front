@@ -12,7 +12,7 @@ import { useParams } from "react-router";
 const moment = require("moment");
 
 const { io } = require("socket.io-client");
-const socket = io.connect("http://localhost:3031");
+const socket = io.connect("https://fathomless-forest-78481.herokuapp.com:3031");
 let receiveFile = false;
 
 export default function Photo() {
