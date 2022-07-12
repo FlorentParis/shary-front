@@ -3,7 +3,7 @@ import axios from "axios"
 export default function useGetEventsByUser() {
     return (id: string) => {
         return axios({
-            url: "http://localhost:3030/api/event/getAllEventsByUser",
+            url: "https://fathomless-forest-78481.herokuapp.com/api/event/getAllEventsByUser",
             method:"get",
             withCredentials: true,
             params: {

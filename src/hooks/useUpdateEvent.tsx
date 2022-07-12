@@ -3,7 +3,7 @@ import axios from "axios";
 export default function useUpdateEvent() {
   return (eventForm: any) => {
     return axios({
-      url: "http://localhost:3030/api/event/updateEvent",
+      url: "https://fathomless-forest-78481.herokuapp.com/api/event/updateEvent",
       method: "post",
       data: new URLSearchParams({
         _id: eventForm._id,

@@ -4,7 +4,7 @@ import { LocalEventPost } from "../interfaces/LocalEventPost";
 export default function useDeleteEvent() {
   return (token: string, event: LocalEventPost) => {
     return axios({
-      url: "http://localhost:3030/api/event/deleteEvent",
+      url: "https://fathomless-forest-78481.herokuapp.com/api/event/deleteEvent",
       method: "post",
       data: new URLSearchParams({
         userId: event.userId,

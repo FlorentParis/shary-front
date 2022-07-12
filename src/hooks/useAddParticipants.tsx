@@ -3,7 +3,7 @@ import axios from "axios"
 export default function useAddParticipants() {
     return (idEvent: string, mailGuest: string) => {
         return axios({
-            url: "http://localhost:3030/api/event/addParticipant",
+            url: "https://fathomless-forest-78481.herokuapp.com/api/event/addParticipant",
             method:"post",
             withCredentials: true,
             data: {

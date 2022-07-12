@@ -23,7 +23,7 @@ export default function usePostModules() {
         };
 
         return axios({
-            url: "http://localhost:3030/api/modules/updateModules",
+            url: "https://fathomless-forest-78481.herokuapp.com/api/modules/updateModules",
             method:"post",
             data: obj,
             withCredentials: true

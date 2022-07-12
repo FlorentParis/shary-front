@@ -3,7 +3,7 @@ import axios from "axios";
 export default function useCreateEvent() {
   return (eventForm: any) => {
     return axios({
-      url: "http://localhost:3030/api/event/createEvent",
+      url: "https://fathomless-forest-78481.herokuapp.com/api/event/createEvent",
       method: "post",
       data: new URLSearchParams({
         userId: eventForm.userId,

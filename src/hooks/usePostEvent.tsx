@@ -47,7 +47,7 @@ export default function usePostBlog() {
 
         }
         return axios({
-            url: "http://localhost:3030/api/event/createEvent",
+            url: "https://fathomless-forest-78481.herokuapp.com/api/event/createEvent",
             method:"post",
             data: obj,
             withCredentials: true,

@@ -4,7 +4,7 @@ import UserInterface from "../interfaces/UserInterface";
 export default function useRegister() {
     return (user: UserInterface) => {
         return axios({
-            url: "http://localhost:3030/api/user/createUser",
+            url: "https://fathomless-forest-78481.herokuapp.com/api/user/createUser",
             method:"post",
             data: {
                 lastname: user.lastname,
